@@ -1,3 +1,153 @@
-body{
-    background-color: black;
+*{
+    margin: 0;
 }
+nav{
+    background-color: #000000;
+}
+nav a{
+    color: whitesmoke;
+}
+/* hero */
+.hero{
+    background-color: #000000;
+    height: 600px;
+    margin-top: -22px;
+}
+.news{
+    color: white;
+    padding: 75px 0 0 380px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-date{
+    display: flex;
+    margin: 50px 0 0 380px;
+}
+.hero-date-left button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #000000;
+    border:2px solid #ff9900;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 50%;
+}
+.hero-date-left{
+    margin-right: 30px;
+}
+.hero-date-left h3{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    margin: 40px 0;
+}
+.hero-date-left p{
+    color: whitesmoke;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.hero-date-right{
+    border-left: 2px solid whitesmoke;
+}
+.hero-date-right h1{
+    width: 790px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-weight: 900;
+    line-height: 55px;
+    padding-left: 40px;
+}
+.hero-date-right p{
+    margin-top: 40px;
+    padding-left: 40px;
+    color: whitesmoke;
+}
+.hero img{
+    margin:70px 0 0 380px;
+}
+/* .reading */
+.reading{
+    display: flex;
+    width: 100%;
+    margin-top: 550px;
+}
+
+.reading .left-side{
+    width: 50%;
+    top: 10px;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0px;
+}
+
+.reading .right-side{
+    width: 50%;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* news */
+    .news{
+        padding: 55px 0 0 20px;
+    }
+    .hero-date{
+        flex-direction: column;
+        margin: 0px 0 0 0px;
+    }
+    .hero-date-left{
+        margin-left: 30px;
+    }
+    .hero-date-right{
+        border-left: none;
+    }
+    .hero img{
+        width: 820px;
+        height: 461px;
+        margin: 0 0 0 0;
+    }
+    
+
+    
+  }
+
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* hero */
+    .hero-date-right h1{
+        width: 356px;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        font-weight: 900;
+        padding-left: 0px;
+    }
+    .hero-date{
+        flex-direction: column;
+        margin: 0px 0 0 20px;
+    }
+    .hero-date-left{
+        margin:0 0 0 0px;
+    }
+    .hero img{
+        width: 390px;
+        height: 219px;
+        margin: 0 0 0 0;
+    }
+    .hero-date-right{
+        border-left: none;
+    }
+    .news{
+        color: white;
+        padding: 22px 0 0 20px;
+    }
+    
+  }
