@@ -7,6 +7,9 @@ nav{
 nav a{
     color: whitesmoke;
 }
+.icon-bar{
+    background-color: whitesmoke;
+}
 /* hero */
 .hero{
     background-color: #000000;
@@ -78,13 +81,40 @@ nav a{
     top: 10px;
     position: sticky;
     -webkit-position: sticky;
-    top: 0px;
 }
 
 .reading .right-side{
     width: 50%;
+} 
+/* footer */
+footer{
+    height: 545px;
+    background-color: #18202A;
+    color: whitesmoke;
 }
-
+.footer-text{
+    display: flex;
+}
+footer h1{
+    margin:100px 0 0 400px;
+}
+.amazon-news{
+    margin:100px 100px;
+}
+.press-center{
+    height: 250px;
+    margin-top:100px;
+    padding-right: 100px;
+    border-right: 1px solid #DDDDDD;
+}
+.footer h5{
+    margin-bottom: 25px;
+}
+.icons p{
+    font-size: 30px;
+    margin-left:400px ;
+    letter-spacing: 20px;
+}
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -109,6 +139,21 @@ nav a{
         width: 820px;
         height: 461px;
         margin: 0 0 0 0;
+    }
+    /* footer */
+    footer h1{
+        margin:100px 0 0 150px;
+    }
+    .press-center{
+        border-right: none;
+    }
+    .footer h5{
+        margin-bottom: 25px;
+    }
+    .icons p{
+        font-size: 30px;
+        margin-left:250px ;
+        letter-spacing: 20px;
     }
     
 
@@ -148,6 +193,38 @@ nav a{
     .news{
         color: white;
         padding: 22px 0 0 20px;
+    }
+    /* footer */
+    footer{
+        height: 550px;
+    }
+    .footer-text{
+        flex-direction: column;
+    }
+    footer h1{
+        margin:20px 0 0 20px;
+    }
+    .amazon-news{
+        margin:20px 20px;
+    }
+    .press-center{
+        border-right: none;
+    }
+    .footer h5{
+        margin-bottom: 0px;
+    }
+    .icons p{
+        font-size: 30px;
+        margin-left:250px ;
+        letter-spacing: 20px;
+    }
+    .press-center{
+        margin:0 0 0 20px;
+        padding-right: 20px;
+    }
+    .icons p{
+        margin-left:20px ;
+        letter-spacing: 20px;
     }
     
   }
